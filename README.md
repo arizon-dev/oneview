@@ -33,6 +33,9 @@ The link is a bearer secret: anyone who gets it can view the message. Use HTTPS 
 
 ## Requirements
 
+> [!WARNING]  
+> Ensure you are using an up-to-date version of PHP that is protected against the critical RCE vulnerabilities disclosed in October 2026. See the [NCSC advisory on the critical PHP security issue](https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php) for guidance.
+
 - PHP 7.4 or later with the **OpenSSL** and **JSON** extensions.
 - A web server configured to route application paths to `index.php`. Apache deployments can use the included `.htaccess` rules and require `mod_rewrite` and `AllowOverride` support.
 - A PHP-writable `local/` directory for the cache and file-backed records.
